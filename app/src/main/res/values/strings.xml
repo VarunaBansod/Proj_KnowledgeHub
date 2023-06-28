@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Proj_KnowledgeHub</string>
+    <string name="AD">Android App Development</string>
+    <string name="iOS">iOS App Development</string>
+    <string name="ML">Machine Learning</string>
+    <string name="BC">Block Chain</string>
+    <string name="WD">Web Development</string>
+    <string name="Gd">Graphic Designing</string>
+    <string name="call">CALL US</string>
+    <string name="AndroidHead">Android App Development</string>
+    <string name="know_more">Click here to know more about these skills</string>
+
+
+</resources>

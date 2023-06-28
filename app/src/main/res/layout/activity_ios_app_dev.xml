@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WebDev">
+    <!-- ios app  heading -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/pink"
+        android:text="@string/iOS"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp">
+            <!-- swift-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/swift_img"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="34dp"
+                android:src="@drawable/swift"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+            <TextView
+                android:id="@+id/swift_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/swift_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="SWIFT"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!--      c sharp     -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/csharp_img"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_toEndOf="@+id/swift_img"
+                android:layout_toRightOf="@+id/swift_img"
+                android:src="@drawable/c_sharp"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+            <TextView
+                android:id="@+id/csharp_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/swift_img"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="54dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="C#"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!-- objective c  -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/objective_img"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/swift_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="34dp"
+                android:src="@drawable/objective_c"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+            <TextView
+                android:id="@+id/objective_text"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/objective_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="OBJECTIVE-C"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!--      java  -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/java_img"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/csharp_text"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_toEndOf="@+id/swift_img"
+                android:layout_toRightOf="@+id/swift_img"
+                android:src="@drawable/java"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+            <TextView
+                android:id="@+id/java_text"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/java_img"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="JAVA"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <!-- javascript-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/javascript_img"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/objective_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="34dp"
+                android:src="@drawable/js"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+            <TextView
+                android:id="@+id/javascript_text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/javascript_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="JAVASCRIPT"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <!--      dart     -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dart_img"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/java_text"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@+id/javascript_img"
+                android:layout_toRightOf="@+id/javascript_img"
+                android:src="@drawable/dart"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+            <TextView
+                android:id="@+id/dart_text"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dart_img"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="DART"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/moreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dart_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="@string/know_more" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.50"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

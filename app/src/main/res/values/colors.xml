@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="baby_pink">#FFD0D0</color>
+    <color name="light_baby_pink">#FFE9EC</color>
+    <color name="light_yellow">#FFE4A7</color>
+    <color name="off_white">#FFF4F4</color>
+    <color name="pinkish_cream">#FFEBEB</color>
+    <color name="light_cream">#FFFAD7</color>
+    <color name="light_pink">#FF90BB</color>
+    <color name="pink">#FF2171</color>
+
+</resources>

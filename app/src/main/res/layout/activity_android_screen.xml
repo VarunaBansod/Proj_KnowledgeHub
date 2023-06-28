@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/off_white"
+    tools:context=".AndroidScreen">
+    <!--      android heading -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/pink"
+        android:text="@string/AndroidHead"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="730dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+            <!-- java -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/javaimg"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/java"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/java_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/javaimg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="JAVA"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!-- kotlin -->
+
+            <!-- c # -->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/kotlinimg"
+                android:layout_width="188dp"
+                android:layout_height="156dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="26dp"
+                android:layout_toEndOf="@+id/javaimg"
+                android:layout_toRightOf="@+id/javaimg"
+                android:src="@drawable/kotlin"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/kotlin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/javaimg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="KOTLIN"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/csharpimg"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/java_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/c_sharp"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+            <TextView
+                android:id="@+id/csharp_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/csharpimg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="C#"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!-- python -->
+
+            <!-- xml -->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pythonimg"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/kotlin_text"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_toEndOf="@+id/csharpimg"
+                android:layout_toRightOf="@+id/csharpimg"
+                android:src="@drawable/pythonimg"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/python_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pythonimg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="PYTHON"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/xmlimg"
+                android:layout_width="186dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/csharp_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/xml"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+
+            <!-- sql -->
+
+            <TextView
+                android:id="@+id/xml_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xmlimg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="XML"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sqlimg"
+                android:layout_width="186dp"
+                android:layout_height="154dp"
+                android:layout_below="@+id/python_text"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@+id/xmlimg"
+                android:layout_toRightOf="@+id/xmlimg"
+                android:src="@drawable/sql"
+                app:civ_border_color="@color/pink"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/sql_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sqlimg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/baby_pink"
+                android:gravity="center_horizontal"
+                android:text="SQL"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/moreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xml_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="@string/know_more" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.50"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
